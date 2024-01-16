@@ -10,8 +10,14 @@ cars <- read.csv("Cars.csv")
 # Peek at the data
 head(cars)
 
+
+#How many cars of each transmission? 
+
 # Create a frequency table
 table(cars$Transmission)
+
+
+# What does fuel economy look like?
 
 # Get the minimum value
 min(cars$Fuel.Economy)
@@ -34,6 +40,8 @@ sd(cars$Fuel.Economy)
 # Get the total value 
 sum(cars$Fuel.Economy)
 
+
+# How are cylinders and fuel economy related?
 # Get the Correlation Coefficient
 cor(
   x = cars$Cylinders,
